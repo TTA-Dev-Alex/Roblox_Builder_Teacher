@@ -2,7 +2,7 @@
 wait(10)
 player = game.Players.ajs510work -- change this to the users player name
 backpack = player.Backpack 
-torch = ReplicatedStorage.Torch --Change this to the item in your game you want to craft
+torch = game.ReplicatedStorage.Torch --Change this to the item in your game you want to craft
 print("Variables initialized...")
 while true do
 	-- find the items required to 'craft' the item from replicated storage
