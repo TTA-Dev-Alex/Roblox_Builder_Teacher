@@ -1,3 +1,6 @@
+-- THIS IS SAMPLE CODE
+-- In order to run this code, adjust lines 6, 8, 12, 13, 24, 25
+
 -- wait is necessary to find player in the game successfully
 wait(10)
 player = game.Players.ajs510work -- change this to the users player name
@@ -15,6 +18,10 @@ while true do
 	if hasThing and otherThing then
 		print("combining, please wait...")
 		wait(2)
+		-- give the new item
 		torch.Parent = backpack	
+		-- remove the original items
+		backpack.Wood:Destroy()
+		backpack.Coal:Destroy()
 	end
 end
